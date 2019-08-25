@@ -1,0 +1,53 @@
+body, h1, h2, h3, h4, h5, h6, blockquote, p, form, ul, li {margin: 0;padding: 0;}
+li {direction:rtl;text-align:right;list-style:none;}
+a {color:#000000;text-decoration:none;}
+a:hover {color:#999999}
+img {border:none}
+body {font-family: tahoma;font-size:11px;text-align:right;color: #fff;margin: 0;padding: 0;background:url(images/bg.jpg);line-height:18px}
+.base {width:100%;float:right;background:url(images/base.jpg) repeat-x;min-height:300px;}
+.middle {width:1000px;margin: 0 auto;direction:rtl;position:relative}
+.header {width:1000px;height:242px;float:right;background:url(images/header.jpg) no-repeat;position:relative}
+.topmenu {height:55px;width:630px;float:right;margin:184px 50px 0 0;}
+.topmenu li {float:right;height:23px;padding:0 0 0 11px;line-height:20px;margin:15px 0 0 0}
+.topmenu li:hover {background:url(images/navlink_left.jpg) no-repeat left 0px;}
+.topmenu li a {color:#2c3031;float:right;padding:0 11px 0 0;height:23px;display:block;}
+.topmenu li:hover a {background:url(images/navlink_right.jpg) no-repeat right 0px;color:#f8fafb;}
+.support {width:135px;height:20px;position:absolute;top:21px;right:120px;text-shadow:1px 1px #000;}
+.sidebar{width:230px;float:right;margin:0 39px 0 0;}
+.menu{width:230px;float:right;margin:0 0 10px 0;}
+.menu_top {width:230px;float:right;height:64px;background:url(images/menu_top.jpg) no-repeat;}
+.menu_body {width:230px;float:right;background:url(images/menu_bg.jpg) repeat-y;}
+.menu_body .text {width:195px;float:right;margin:5px 17px 0 0;color:#5f5f5f}
+.menu_body .text li{width:195px;float:right;margin:5px 0 0 0;background:url(images/menu_li.jpg) no-repeat 0px 0px;height:33px;line-height:30px}
+.menu_body .text li:hover{background:url(images/menu_li.jpg) no-repeat 0px -33px;}
+.menu_body .text li a {color:#5d5d5d;text-shadow:1px 1px #fff;margin:0 20px 0 0;width:175px;height:33px;float:right}
+.menu_bottom {width:230px;float:right;height:14px;background:url(images/menu_bottom.jpg) no-repeat;}
+
+h3.main,h3.user,h3.search,h3.contact,h3.pelan,h3.pay {width:200px;float:right;margin:20px 15px 0 0;padding:0 40px 0 0;color:#5f5f5f;font-size:15px;line-height:30px}
+h3.pay {background:url(images/menu_icons.png) no-repeat 100% -145px;height:32px;}
+h3.pelan {background:url(images/menu_icons.png) no-repeat 100% -116px;height:28px;}
+h3.main {background:url(images/menu_icons.png) no-repeat 100% 0;height:32px;}
+h3.user {background:url(images/menu_icons.png) no-repeat 100% -32px;height:30px;}
+h3.search {background:url(images/menu_icons.png) no-repeat 100% -62px;height:27px;}
+h3.contact {background:url(images/menu_icons.png) no-repeat 100% -89px;height:27px;}
+.input {width:188px;float:right;margin:5px 4px 0 0;background:url(images/inputs.jpg) no-repeat;border:none;}
+.input input{margin:0 19px 0 0 !important;border:none;height:31px;font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:#5f5f5f;text-shadow:1px 1px #fff;background:none;width:150px;}
+.login {width:85px;height:27px;float:left;margin:0 0 0 15px;background:url(images/login.jpg)  no-repeat;border:none;cursor:pointer}
+.menu_body .text select{width:90px;float:right;height:20px;margin:5px 0 0 0;font-family:Tahoma, Geneva, sans-serif}
+.menu_body .text input{margin:5px 0 0 0;}
+.post {width:688px;float:right;margin:0 5px 0 0;}
+.post_top {width:688px;float:right;background:url(images/post_top.jpg) no-repeat;height:66px;}
+.post_top h2{width:600px;float:right;margin:20px 20px 0 0;height:32px;padding:0 40px 0 0;color:#5f5f5f;font-size:15px;line-height:33px}
+.post_body .text h2{width:600px;float:right;margin:20px 0 0 0;height:41px;padding:0 40px 0 0;color:#5f5f5f;font-size:15px;line-height:30px;background:url(images/news.jpg) no-repeat right}
+.post_body {width:688px;float:right;background:url(images/post_bg.jpg) repeat-y;}
+.post_body .text{width:628px;float:right;text-align:justify;color:#5f5f5f;margin:0 30px 10px 0;line-height:20px}
+.post_body .text li{width:100%;float:right;margin:5px 0 0 0;background:url(images/circle.jpg) no-repeat 100% 14px;height:20px;line-height:30px;padding:0 10px 0 0}
+.post_bottom {width:688px;float:right;background:url(images/post_bottom.jpg) no-repeat;height:23px;}
+.footer {width:924px;float:right;margin:10px 38px 0 0;}
+
+
+.footer_right {width:14px;float:right;height:105px;background:url(images/footer_right.png) no-repeat;}
+.footer_body {width:896px;float:right;height:105px;background:url(images/footer_bg.png) repeat-x;}
+.footer_body .text {text-align:center;color:#141414;text-shadow:1px 1px #fff;margin:25px 0 0 0;}
+.footer_body .text a{color:#141414;text-shadow:1px 1px #fff;font-weight:700;}
+.footer_left {width:14px;float:right;height:105px;background:url(images/footer_left.png) no-repeat;}

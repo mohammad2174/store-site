@@ -1,0 +1,13 @@
+.cssguycomments {padding:8px;margin-bottom:40px;}
+.cssguycomments p {font:normal 12px tahoma;}
+a img {border:0;vertical-align:text-bottom;}
+table {border-collapse:collapse;}
+th.side {background: transparent url(images/bg_th_side.gif) no-repeat bottom left}
+td.side {text-align:right;background: transparent url(images/bg_td_side.gif) no-repeat bottom left;width:140px;font:normal 12px  tahoma;color:#6e6f37;padding-right:8px}
+th {padding-top:10px;height:64px;vertical-align:middle;color:#fff;font:normal 11px  tahoma;letter-spacing:1px;background:transparent url(images/bg_th.gif) no-repeat bottom left;text-align:center;}
+td {text-align:center;background:transparent url(images/bg_td.gif) no-repeat bottom left;color:#fff;width:80px;height:40px;font:normal 12px  tahoma;text-align:center}
+td.on {background:transparent url(images/bg_td_on.gif) no-repeat bottom left;	width:100px;}
+th.on {background:transparent url(images/bg_th_on.gif) no-repeat bottom left;padding-bottom:9px;width:100px;text-align:center}
+tfoot td {background:transparent url(images/bg_foot_td.gif) no-repeat top left;height:64px;vertical-align:top;padding-top:8px}
+tfoot td.on {background:transparent url(images/bg_foot_td_on.gif) no-repeat top left;padding-top:16px}
+tfoot td.side {background: transparent url(images/bg_foot_td_side.gif) no-repeat top left;}
