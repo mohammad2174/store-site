@@ -17,14 +17,14 @@
 <div class="support">فروش: 02166847775</div>
 <div class="topmenu">
 <ul>
-<li class="active"><a href="index.html" title="هاست"><span>صفحه اصلی</span></a></li>
-<li><a href="host.html"><span>میزبانی وب</span></a></li>
-<li><a href="domain.html"><span>دامنه</span></a></li>
+<li class="active"><a href="index.php" title="هاست"><span>صفحه اصلی</span></a></li>
+<li><a href="host.php"><span>میزبانی وب</span></a></li>
+<li><a href="domain.php"><span>دامنه</span></a></li>
 <li><a href="http://www.servermajazi.com/"><span>سرور مجازی</span></a></li>
-<li><a href="reseller.html"><span>نمایندگی</span></a></li>
-<li><a href="weblog2site.html"><span>&#1578;&#1576;&#1583;&#1740;&#1604; &#1608;&#1576;&#1604;&#1575;&#1711;</span></a></li>
-<li><a href="design.html"><span>طراحی</span></a></li>
-<li><a href="seo-backlink.html"><span>&#1576;&#1705; &#1604;&#1740;&#1606;&#1705;</span></a></li>
+<li><a href="reseller.php"><span>نمایندگی</span></a></li>
+<li><a href="weblog2site.php"><span>&#1578;&#1576;&#1583;&#1740;&#1604; &#1608;&#1576;&#1604;&#1575;&#1711;</span></a></li>
+<li><a href="design.php"><span>طراحی</span></a></li>
+<li><a href="seo-backlink.php"><span>&#1576;&#1705; &#1604;&#1740;&#1606;&#1705;</span></a></li>
 <li><a href="http://hub.najvahost.com/contact.php"><span>تماس با ما</span></a></li>
 </ul>
 </div>
@@ -46,7 +46,7 @@
 ساب دامین نامحدود<br>
 نصب رایگان مدیریت محتوای فارسی<br>
 قیمت سالیانه :<strong style="font-size: 9pt;color:green"> 50 هزار تومان</strong>
-<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=55"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.html"><span>اطلاعات بیشتر...</span></a>
+<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=55"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.php"><span>اطلاعات بیشتر...</span></a>
 </ul>
 </div></div>
 <div class="menu_bottom"></div>
@@ -63,7 +63,7 @@
 ساب دامین نامحدود<br>
 نصب رایگان مدیریت محتوای فارسی<br>
 قیمت سالیانه :<strong style="font-size: 9pt;color:green"> 25 هزار تومان</strong>
-<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=53"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.html"><span>اطلاعات بیشتر...</span></a>
+<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=53"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.php"><span>اطلاعات بیشتر...</span></a>
 </ul>
 </div></div>
 <div class="menu_bottom"></div>
@@ -91,9 +91,9 @@
 <div class="menu_top"><h3 class="main">گزینه های دیگر</h3></div>
 <div class="menu_body"><div class="text">
 <ul>
-<li class="active"><a title="هاست" href="about.html"><span>درباره ی ما</span></a></li>
-<li><a href="rules.html"><span>قوانین و مقررات</span></a></li>
-<li><a href="sh-h.html"><span>شماره حساب ها</span></a></li>
+<li class="active"><a title="هاست" href="about.php"><span>درباره ی ما</span></a></li>
+<li><a href="rules.php"><span>قوانین و مقررات</span></a></li>
+<li><a href="sh-h.php"><span>شماره حساب ها</span></a></li>
 </ul>
 </div></div>
 <div class="menu_bottom"></div>

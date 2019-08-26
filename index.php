@@ -17,14 +17,14 @@
 <div class="support">فروش: 02166847775</div>
 <div class="topmenu">
 <ul>
-<li class="active"><a href="index.html" title="هاست"><span>صفحه اصلی</span></a></li>
-<li><a href="host.html"><span>میزبانی وب</span></a></li>
-<li><a href="domain.html"><span>دامنه</span></a></li>
+<li class="active"><a href="index.php" title="هاست"><span>صفحه اصلی</span></a></li>
+<li><a href="host.php"><span>میزبانی وب</span></a></li>
+<li><a href="domain.php"><span>دامنه</span></a></li>
 <li><a href="http://www.servermajazi.com/"><span>سرور مجازی</span></a></li>
-<li><a href="reseller.html"><span>نمایندگی</span></a></li>
-<li><a href="weblog2site.html"><span>&#1578;&#1576;&#1583;&#1740;&#1604; &#1608;&#1576;&#1604;&#1575;&#1711;</span></a></li>
-<li><a href="design.html"><span>طراحی</span></a></li>
-<li><a href="seo-backlink.html"><span>&#1576;&#1705; &#1604;&#1740;&#1606;&#1705;</span></a></li>
+<li><a href="reseller.php"><span>نمایندگی</span></a></li>
+<li><a href="weblog2site.php"><span>&#1578;&#1576;&#1583;&#1740;&#1604; &#1608;&#1576;&#1604;&#1575;&#1711;</span></a></li>
+<li><a href="design.php"><span>طراحی</span></a></li>
+<li><a href="seo-backlink.php"><span>&#1576;&#1705; &#1604;&#1740;&#1606;&#1705;</span></a></li>
 <li><a href="http://hub.najvahost.com/contact.php"><span>تماس با ما</span></a></li>
 </ul>
 </div>
@@ -46,7 +46,7 @@
 ساب دامین نامحدود<br>
 نصب رایگان مدیریت محتوای فارسی<br>
 قیمت سالیانه :<strong style="font-size: 9pt;color:green"> 50 هزار تومان</strong>
-<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=55"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.html"><span>اطلاعات بیشتر...</span></a>
+<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=55"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.php"><span>اطلاعات بیشتر...</span></a>
 </ul>
 </div></div>
 <div class="menu_bottom"></div>
@@ -63,7 +63,7 @@
 ساب دامین نامحدود<br>
 نصب رایگان مدیریت محتوای فارسی<br>
 قیمت سالیانه :<strong style="font-size: 9pt;color:green"> 25 هزار تومان</strong>
-<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=53"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.html"><span>اطلاعات بیشتر...</span></a>
+<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=53"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.php"><span>اطلاعات بیشتر...</span></a>
 </ul>
 </div></div>
 <div class="menu_bottom"></div>
@@ -72,11 +72,10 @@
 <div class="menu">
 <div class="menu_top"><h3 class="user">ورود کاربر</h3></div>
 <div class="menu_body"><div class="text">
-<form method="post" action="http://hub.najvahost.com/dologin.php">
-<p class="input"><input name="username" type="text" size="25"  onBlur="if(this.value=='') this.value='ایمیل';" onFocus="if(this.value=='ایمیل')" onmousedown="if(this.value=='ایمیل') this.value='';"/></p>
-<p class="input"><input name="password" type="password" size="25"  class="input" onBlur="if(this.value=='') this.value='ایمیل';" onFocus="if(this.value=='ایمیل') this.value='';"/></p>
-<p> <input type="checkbox" name="rememberme" /> مرا به خاطر بسپار</p>
-<p><input type="submit" class="submitbutton login" value="" />
+<form method="post" action="checklogin.php">
+<p class="input"><input name="username" type="text" size="25" placeholder="ایمیل..."/></p>
+<p class="input"><input name="password" type="password" size="25" placeholder="رمز عبور..."/></p>
+<p><input type="submit" class="submitbutton login" value="" name="btnlog"/>
 </p>
 </form>
 <ul>
@@ -91,9 +90,9 @@
 <div class="menu_top"><h3 class="main">گزینه های دیگر</h3></div>
 <div class="menu_body"><div class="text">
 <ul>
-<li class="active"><a title="هاست" href="about.html"><span>درباره ی ما</span></a></li>
-<li><a href="rules.html"><span>قوانین و مقررات</span></a></li>
-<li><a href="sh-h.html"><span>شماره حساب ها</span></a></li>
+<li class="active"><a title="هاست" href="about.php"><span>درباره ی ما</span></a></li>
+<li><a href="rules.php"><span>قوانین و مقررات</span></a></li>
+<li><a href="sh-h.php"><span>شماره حساب ها</span></a></li>
 </ul>
 </div></div>
 <div class="menu_bottom"></div>
@@ -122,7 +121,7 @@
 <div class="post">
 <div class="post_top"><h2>نجوا هاست | میزبانی وب - نمایندگی هاست و دامنه - ثبت دامنه</h2></div>
 <div class="post_body"><div class="text">
-<h1 style="display:none">میزبانی وب | نمایندگی هاست و دامنه | سرور مجازی| ثبت دامنه | طراحی وبسایت</h3>
+<h3 style="display:none">میزبانی وب | نمایندگی هاست و دامنه | سرور مجازی| ثبت دامنه | طراحی وبسایت</h3>
 <img style="margin:0 20px 0 20px" align="left" src="images/najva-logo.png" alt="نمایندگی هاستینگ">
 يكي از مهمترين ويژگي هاي يك سايت خوب ، سرعت و پايداري آن است و قطعاً در زنجيره اتصال كاربر به سايت ، مشخصات فني سرويس دهنده و نحوه اتصال آن به اينترنت جزو مهمترين عوامل تعيين كننده اين ويژگي ها مي باشد. شركت نجواهاست با در اختيار داشتن سرورهايي كه در بهترين مراكز موجود در آمريكا نگهداري مي گردد ، امكان واگذاري فضا براي نگهداري وب سايت را فراهم نموده است.<br>
 سرويس هاي هاست ( هاستینگ ) نجواهاست بر روي سرورهاي امن ويندوز و لینوکس ، با پهناي باند بالا و در پيشرفته ترين مرکز ديتا در آمریکا ، ارايه مي شوند.<br>
