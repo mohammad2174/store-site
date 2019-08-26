@@ -6,17 +6,19 @@
     <link media="screen" href="style.css"  type="text/css" rel="stylesheet" >
     <link media="screen" href="main.css"  type="text/css" rel="stylesheet" ><script src="js/najva.js" type="text/javascript"></script>
 </head>
-
+<?php
+include "connect.php";
+?>
 <body>
 <div class="menu">
     <div class="menu_top"><h3 class="user">ورود کاربر</h3></div>
     <div class="menu_body"><div class="text">
-            <form method="post" action="checklogin.php">
+            <form method="post" action="checkreg.php">
                 <p class="input"><input name="username" type="text" size="25" placeholder="ایمیل..."/></p>
                 <p class="input"><input name="password" type="password" size="25" placeholder="رمز عبور..."/></p>
                 <p class="input"><input name="address" type="text" size="25" placeholder="آدرس..."/></p>
                 <p class="input"><input name="tel" type="text" size="25" placeholder="تلفن..."/></p>
-                <p><input type="submit" class="submitbutton login" value="" name="btnlog"/>
+                <p><input type="submit" class="submitbutton login" value="" name="btnreg"/>
                 </p>
             </form>
             <ul>
