@@ -44,7 +44,7 @@
                 <div class="text">
                     <ul>
                         <?php
-                        
+
                             echo $_GET["email"] . " " . "خوش آمدید";
 
                         ?>
