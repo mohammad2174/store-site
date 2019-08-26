@@ -35,22 +35,27 @@
 <div class="topmenu_left"></div>
 </div>
 <div class="sidebar">
-<div class="menu">
-<div class="menu_top"><h3 style="font-size:9pt" class="pelan">پرطرفدارترین پلان میزبانی</h3></div>
-<div class="menu_body"><div class="text">
-<ul>
- 1 گیگابایت فضا<br>
-100 گیگابایت پهنای باند<br>
-ایمیل نامحدود<br>
-دیتابیس نامحدود<br>
-ساب دامین نامحدود<br>
-نصب رایگان مدیریت محتوای فارسی<br>
-قیمت سالیانه :<strong style="font-size: 9pt;color:green"> 50 هزار تومان</strong>
-<br><a href="http://hub.najvahost.com/cart.php?a=add&amp;pid=55"><span><img src="files/choose.gif" alt="Choose" /></span></a> | <a href="host.php"><span>اطلاعات بیشتر...</span></a>
-</ul>
-</div></div>
-<div class="menu_bottom"></div>
-</div>
+    <?php
+    if(isset($_GET["email"])) {
+        ?>
+        <div class="menu">
+            <div class="menu_top"><h3 style="font-size:9pt" class="pelan">ورود کاربر</h3></div>
+            <div class="menu_body">
+                <div class="text">
+                    <ul>
+                        <?php
+                        
+                            echo $_GET["email"] . " " . "خوش آمدید";
+
+                        ?>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_bottom"></div>
+        </div>
+        <?php
+    }
+    ?>
 <!--Menu-->
 <div class="menu">
 <div class="menu_top"><h3 style="font-size:9pt" class="pelan">پلان اقتصادی (دو ستاره)</h3></div>
