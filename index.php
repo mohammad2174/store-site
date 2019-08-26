@@ -79,7 +79,7 @@
 </p>
 </form>
 <ul>
-<li><a href="http://hub.najvahost.com/register.php"><span>عضویت در سایت</span></a></li>
+<li><a href="register.php"><span>عضویت در سایت</span></a></li>
 <li><a href="http://hub.najvahost.com/pwreset.php"><span>فراموشی کلمه عبور</span></a></li>
 <ul>
 </div></div>
