@@ -124,19 +124,29 @@
 </div><!--Menu-->
 </div><!--Sidebar-->
 <div class="post">
-<div class="post_top"><h2>نجوا هاست | میزبانی وب - نمایندگی هاست و دامنه - ثبت دامنه</h2></div>
-<div class="post_body"><div class="text">
-<h3 style="display:none">میزبانی وب | نمایندگی هاست و دامنه | سرور مجازی| ثبت دامنه | طراحی وبسایت</h3>
-<img style="margin:0 20px 0 20px" align="left" src="images/najva-logo.png" alt="نمایندگی هاستینگ">
-يكي از مهمترين ويژگي هاي يك سايت خوب ، سرعت و پايداري آن است و قطعاً در زنجيره اتصال كاربر به سايت ، مشخصات فني سرويس دهنده و نحوه اتصال آن به اينترنت جزو مهمترين عوامل تعيين كننده اين ويژگي ها مي باشد. شركت نجواهاست با در اختيار داشتن سرورهايي كه در بهترين مراكز موجود در آمريكا نگهداري مي گردد ، امكان واگذاري فضا براي نگهداري وب سايت را فراهم نموده است.<br>
-سرويس هاي هاست ( هاستینگ ) نجواهاست بر روي سرورهاي امن ويندوز و لینوکس ، با پهناي باند بالا و در پيشرفته ترين مرکز ديتا در آمریکا ، ارايه مي شوند.<br>
-سرورهاي ميزباني وب ( هاستینگ , هاست ) ما ، مجهز به سخت افزارهاي قدرتمند روز بوده ، و از آخرين ورژن ( ویرایش ) نرم افزارها بهره مند مي باشند . ما از آخرین نسخه پنل مدیریتی هاست ( هاستینگ ) ویندوز Plesk و لینوکس Cpanel به عنوان کنترل پنل هاست ( هاستینگ ) استفاده میکنیم.<br>
-مهندسين و تکنسين هاي متخصص ، بصورت شبانه روزي با استفاده از پيشرفته ترين و مجهز ترین تجهيزات مانيتورينگ ، سرورها را تحت نظر دارند. <br>
-<br>
+<?php
+include "connect.php";
+$query="SELECT * FROM product";
+$result=$connect->prepare($query);
+$result->execute();
+while ($row=$result->fetch(PDO::FETCH_ASSOC)) {
+    ?>
+    <div class="post_top"><h2><?php echo $row["name"]; ?></h2></div>
+    <div class="post_body">
+        <div class="text">
+            <h3 style="display:none">میزبانی وب | نمایندگی هاست و دامنه | سرور مجازی| ثبت دامنه | طراحی وبسایت</h3>
+            <img style="margin:0 20px 0 20px" align="left" src="images/najva-logo.png" alt="نمایندگی هاستینگ">
 
-</div></div>
-<div class="post_bottom"></div>
+            <?php echo $row["description"]; ?><br/><br/><br/><br/>
+            <h2>قیمت:<?php echo number_format($row["price"])."تومان"; ?></h2>
+        </div>
+    </div>
+    <div class="post_bottom"></div>
+<?php
+}
+?>
 </div><!--Post-->
+
 <div class="footer">
 <div class="footer_right"></div>
 <div class="footer_body"><div class="text"><br>کلیه حقوق مادی و معنوی این وبسایت برای <a href="#">نجواهاست</a> محفوظ می باشد </div></div>
