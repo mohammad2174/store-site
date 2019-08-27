@@ -3,6 +3,7 @@ include "connect.php";
 $email=$_POST["username"];
 $pass=$_POST["password"];
 $user="";
+$type="";
 
 $query="SELECT * FROM user WHERE email=:email and pass=:pass";
 $result=$connect->prepare($query);
@@ -12,9 +13,12 @@ $result->execute();
 
 while ($row=$result->fetch(PDO::FETCH_ASSOC)){
     $user=$row["email"];
+    $type=$row["type"];
 }
-if($user!="") {
+if($user!="" && $type=="user") {
     header("location:index.php?email=$user");
+}elseif($user!="" && $type=="admin"){
+    header("location:admin.php");
 }else{
     header("location:index.php?error=5049");
 }
