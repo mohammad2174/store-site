@@ -122,7 +122,7 @@
         <div class="post">
             <div class="post_top"><h2>نجوا هاست | ثبت دامنه</h2></div>
             <div class="post_body"><div class="text">
-                    <form method="post" action="">
+                    <form method="post" action="addproduct.php">
                         <p class="input"><input name="name" type="text" placeholder="نام محصول..."/></p>
                         <p class="input"><input name="description" type="text" placeholder="توضیحات محصول..."/></p>
                         <p class="input"><input name="price" type="text" placeholder="قیمت محصول..."/></p>
