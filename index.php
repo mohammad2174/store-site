@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<?php
+session_start();
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- Mirrored from najvahost.com/ by HTTrack Website Copier/3.x [XR&CO'2010], Sat, 17 Mar 2012 20:39:53 GMT -->
@@ -36,7 +39,7 @@
 </div>
 <div class="sidebar">
     <?php
-    if(isset($_GET["email"])) {
+    if(isset($_SESSION["email"])) {
         ?>
         <div class="menu">
             <div class="menu_top"><h3 style="font-size:9pt" class="pelan">ورود کاربر</h3></div>
@@ -45,7 +48,7 @@
                     <ul>
                         <?php
 
-                            echo $_GET["email"] . " " . "خوش آمدید";
+                            echo $_SESSION["email"] . " " . "خوش آمدید";
 
                         ?>
                     </ul>

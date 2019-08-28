@@ -1,5 +1,6 @@
 <?php
 include "connect.php";
+session_start();
 $email=$_POST["username"];
 $pass=$_POST["password"];
 $user="";
@@ -16,7 +17,8 @@ while ($row=$result->fetch(PDO::FETCH_ASSOC)){
     $type=$row["type"];
 }
 if($user!="" && $type=="user") {
-    header("location:index.php?email=$user");
+    $_SESSION["email"]=$user;
+    header("location:index.php");
 }elseif($user!="" && $type=="admin"){
     header("location:admin.php");
 }else{
