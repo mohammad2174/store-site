@@ -1,5 +1,6 @@
 ﻿<?php
 session_start();
+include "connect.php";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -57,6 +58,37 @@ session_start();
             <div class="menu_bottom"></div>
         </div>
         <?php
+    }
+    ?>
+    <?php
+    if(isset($_SESSION["email"])){
+        ?>
+
+    <div class="menu">
+            <div class="menu_top"><h3 style="font-size:9pt" class="pelan">سبد کاربر</h3></div>
+            <div class="menu_body">
+                <div class="text">
+                    <ul>
+                        <?php
+                        $done=false;
+                        $email=$_SESSION["email"];
+                        $query="SELECT * FROM basket WHERE email=:email and done=:done";
+                        $result=$connect->prepare($query);
+                        $result->bindParam(":email",$email);
+                        $result->bindParam(":done",$done);
+                        $result->execute();
+                            while ($row=$result->fetch(PDO::FETCH_ASSOC)){
+                                echo $row["name"]."........."."تعداد:".$row["count"]."<br/>";
+                            }
+
+                        ?>
+                        <a href="showbasket.php">مشاهده سبد خرید</a>
+    </ul>
+</div>
+</div>
+    <div class="menu_bottom"></div>
+</div>
+    <?php
     }
     ?>
 <!--Menu-->
@@ -128,7 +160,7 @@ session_start();
 </div><!--Sidebar-->
 <div class="post">
 <?php
-include "connect.php";
+
 $query="SELECT * FROM product";
 $result=$connect->prepare($query);
 $result->execute();
