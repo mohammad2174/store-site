@@ -138,7 +138,7 @@ while ($row=$result->fetch(PDO::FETCH_ASSOC)) {
             <img style="margin:0 20px 0 20px" align="left" src="images/najva-logo.png" alt="نمایندگی هاستینگ">
 
             <?php echo $row["description"]; ?><br/><br/><br/><br/>
-            <h2>قیمت:<?php echo number_format($row["price"])."تومان"; ?></h2>
+            <h2>قیمت:<?php echo number_format($row["price"])."تومان"; ?></h2><br/><br/><a href="basket.php?id=<?php echo $row["id"]; ?>">افزودن به سبد خرید</a>
         </div>
     </div>
     <div class="post_bottom"></div>
