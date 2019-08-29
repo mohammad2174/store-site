@@ -6,6 +6,7 @@ $total=0;
 $done=false;
 $point=0;
 $reduce=0;
+$percent=0;
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,7 +39,7 @@ $reduce=0;
             <td><?php echo $price=$row["price"]; ?></td>
             <td><?php echo $count=$row["count"]; ?></td>
             <td><a href="delete.php?id=<?php echo $row["id"]; ?>">حذف</a></td>
-            <?php $total=$price*$count ?>
+            <?php $total +=$price*$count ?>
         </tr>
         <?php
     }
@@ -47,7 +48,7 @@ $reduce=0;
 <table align="center" cellpadding="10" dir="rtl">
     <tr>
         <td>
-            <form action="pay.php" method="post">
+            <form action="showbasket.php" method="post">
 در صورت داشتن کد تخفیف اینجا وارد کنید:<input type="text" name="code">
                 <input type="submit" name="btncode" value="اعمال تخفیف">
             </form>
@@ -83,11 +84,32 @@ $reduce=0;
         <?php
         if($reduce){
             ?>
-            <td>قیمت با محاصبه تخفیف:<?php echo number_format($total=$total-$reduce); ?></td>
+            <td>قیمت با محاصبه امتیاز خرید:<?php echo number_format($total=$total-$reduce); ?></td>
         <?php
         }
         ?>
     </tr>
+    <?php
+    if(isset($_POST["code"])){
+        $code=$_POST["code"];
+        $query="SELECT * FROM reduction WHERE code=:code";
+        $result=$connect->prepare($query);
+        $result->bindParam(":code",$code);
+        $result->execute();
+    while ($row=$result->fetch(PDO::FETCH_ASSOC)) {
+        if($row["code"]){
+            $percent=$row["percent"];
+        }
+    }
+        $re=$total*($percent/100);
+        $total-=$re;
+        ?>
+        <tr>
+            <td>قیمت با محاصبه کد تخفیف:<?php echo number_format($total); ?></td>
+        </tr>
+    <?php
+    }
+    ?>
     <tr>
         <td><a href="pay.php?total=<?php echo $total ?>">پرداخت</a></td>
     </tr>
