@@ -126,6 +126,8 @@
                         <p class="input"><input name="name" type="text" placeholder="نام محصول..."/></p>
                         <p class="input"><input name="description" type="text" placeholder="توضیحات محصول..."/></p>
                         <p class="input"><input name="price" type="text" placeholder="قیمت محصول..."/></p>
+                        <p class="input"><input name="code" type="text" placeholder="کد تخفیف..."/></p>
+                        <p class="input"><input name="percent" type="text" placeholder="درصد تخفیف..."/></p>
                         <p><input type="submit" class="submitbutton login" value=""/>
                         </p>
                     </form>
