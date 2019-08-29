@@ -6,8 +6,9 @@ if(isset($_POST["btnreg"])){
     $address=$_POST["address"];
     $tel=$_POST["tel"];
     $type="user";
+    $point=0;
 
-    $query="INSERT INTO user (email,pass,address,phone,type) VALUES (:user,:pass,:address,:tel,:type)";
+    $query="INSERT INTO user (email,pass,address,phone,type,point) VALUES (:user,:pass,:address,:tel,:type,:point)";
     $result=$connect->prepare($query);
     $result->bindParam(':user',$user);
     $result->bindParam(':pass',$pass);
