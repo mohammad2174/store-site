@@ -18,6 +18,7 @@ $done=false;
         <th>قیمت</th>
         <th>تعداد</th>
         <th>تخفیف</th>
+        <th>حذف</th>
     </tr>
     <?php
     $sqlread="SELECT * FROM basket WHERE email=:email and done=:done";
@@ -34,6 +35,7 @@ $done=false;
             <td><?php echo $row["price"]; ?></td>
             <td><?php echo $row["count"]; ?></td>
             <td><?php echo $row["reduction"]; ?></td>
+            <td><a href="delete.php?id=<?php echo $row["id"]; ?>">حذف</a></td>
         </tr>
         <?php
     }
